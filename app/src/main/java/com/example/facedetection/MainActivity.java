@@ -10,6 +10,9 @@ import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 
+import com.example.facedetection.FaceDetectionAdapter;
+import com.example.facedetection.FaceDetectionModel;
+import com.example.facedetection.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
@@ -180,9 +183,9 @@ public class MainActivity extends AppCompatActivity implements FrameProcessor {
 
         Canvas canvas = new Canvas(bitmap);
         Paint facePaint = new Paint();
-        facePaint.setColor(Color.GREEN);
+        facePaint.setColor(Color.BLUE);
         facePaint.setStyle(Paint.Style.STROKE);
-        facePaint.setStrokeWidth(5f);
+        facePaint.setStrokeWidth(1f);
 
         Paint faceTextPaint = new Paint();
         faceTextPaint.setColor(Color.BLUE);
@@ -303,12 +306,12 @@ public class MainActivity extends AppCompatActivity implements FrameProcessor {
                         Bitmap bitmap = Bitmap.createBitmap(height, width, Bitmap.Config.ARGB_8888);
                         Canvas canvas = new Canvas(bitmap);
                         Paint dotPaint = new Paint();
-                        dotPaint.setColor(Color.RED);
+                        dotPaint.setColor(Color.CYAN);
                         dotPaint.setStyle(Paint.Style.FILL);
-                        dotPaint.setStrokeWidth(3f);
+                        dotPaint.setStrokeWidth(1f);
 
                         Paint linePaint = new Paint();
-                        linePaint.setColor(Color.GREEN);
+                        linePaint.setColor(Color.YELLOW);
                         linePaint.setStyle(Paint.Style.STROKE);
                         linePaint.setStrokeWidth(2f);
 

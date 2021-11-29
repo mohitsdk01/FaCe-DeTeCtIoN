@@ -33,8 +33,8 @@ public class FaceDetectionAdapter extends RecyclerView.Adapter<FaceDetectionAdap
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         FaceDetectionModel faceDetectionModel = faceDetectionModelList.get(position);
-        holder.text1.setText(MessageFormat.format("Face {0}", String.valueOf(faceDetectionModel.getId())));
-        holder.text2.setText(MessageFormat.format("Face {0}", faceDetectionModel.getText()));
+        holder.text1.setText(MessageFormat.format("Face {1}", String.valueOf(faceDetectionModel.getId())));
+        holder.text2.setText(MessageFormat.format("Face {1}", faceDetectionModel.getText()));
 
     }
 
